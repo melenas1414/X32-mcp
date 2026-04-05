@@ -1,0 +1,38 @@
+{
+  "name": "x32-mcp",
+  "version": "1.0.0",
+  "description": "Master MCP Server for Behringer X32 mixer — controls channels, FX, EQ, dynamics and routing via OSC over UDP.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "x32-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "node-osc": "^11.3.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "behringer",
+    "x32",
+    "osc",
+    "audio",
+    "mixer"
+  ],
+  "license": "MIT"
+}
